@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
-	id		= "com.phonegap.getting.started"
+	id		= "com.tealca.tracking"
 	version 	= "1.0.0">
 
-	<name>PhoneGap: Getting Started</name>
+	<name>TEALCA Tracking</name>
 
 	<description>
-		A template for getting started with PhoneGap development and build.phonegap.com
+		Un aplicacion para el rastreo en linea de sus encomiendas
 	</description>
 
-	<author href="http://alunny.github.com"
-		email="andrew.lunny@nitobi.com">
-		Andrew Lunny
+	<author href="http://www.tealca.com"
+		email="sistemas@tealca.com">
+		Dpto. Sistemas - TEALCA
 	</author>
 
 	<icon src="icon.png" gap:role="default" />
