@@ -41,7 +41,7 @@ run(function () {
 
                 x$('img#static_map').attr('src', path);
                 //Intentar conseguir los datos del tracking....
-                x$('#tracking_result').xhr('http://tealca.com/mobiletracking/wstracking.php?tipo=GUIA&guia=3265', function(){ alert('Resultados conseguidos!')});
+                x$('#tracking_result').xhr('http://tealca.com/mobiletracking/wstracking.php?tipo=GUIA&guia=3265');
             }, function () {
                 x$('img#static_map').attr('src', "assets/img/gpsfailed.png");
             });
