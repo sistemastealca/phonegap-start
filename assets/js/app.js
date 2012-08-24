@@ -44,7 +44,8 @@ run(function () {
                 var tipo = x$('input[name=guia]').attr('value');
                 var guia = x$('input[name=tipo]').attr('value');
                 var track = 'http://tealca.com/mobiletracking/wstracking.php?tipo=' + tipo + '&guia=' + guia ;
-                x$('#tracking_result').xhr(track);
+                alert("Tipo: " + tipo + " Guia: " + guia);
+                //x$('#tracking_result').xhr(track);
             }, function () {
                 x$('img#static_map').attr('src', "assets/img/gpsfailed.png");
             });
