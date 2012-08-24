@@ -5,9 +5,9 @@ run(function () {
     // immediately invoked on first run
     var init = (function () {
         if (navigator.network.connection.type == Connection.NONE) {
-            alert("No internet connection - we won't be able to show you any maps");
+            alert("Esta aplicacion requiere una conexion activa a Internet");
         } else {
-            alert("We can reach Google - get ready for some awesome maps!");
+            //alert("We can reach Google - get ready for some awesome maps!");
         }
     })();
     
@@ -41,7 +41,10 @@ run(function () {
 
                 x$('img#static_map').attr('src', path);
                 //Intentar conseguir los datos del tracking....
-                x$('#tracking_result').xhr('http://tealca.com/mobiletracking/wstracking.php?tipo=GUIA&guia=3265');
+                var tipo = x$('input[name=guia]').attr('value');
+                var guia = x$('input[name=tipo]').attr('value');
+                var track = 'http://tealca.com/mobiletracking/wstracking.php?tipo=' + tipo + '&guia=' + guia ;
+                x$('#tracking_result').xhr(track);
             }, function () {
                 x$('img#static_map').attr('src', "assets/img/gpsfailed.png");
             });
